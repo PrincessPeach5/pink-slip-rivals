@@ -17,19 +17,21 @@
 <body>
 <div id="app">
   <header id="topbar">
-    <div class="logo">PINK SLIP <b>RIVALS</b></div>
+    <span class="pill lvl" id="lvl">Lv 1</span>
     <div class="wallet">
+      <span class="pill"><i class="fuel"></i><span id="fuel">10/10</span></span>
       <span class="pill"><i class="coin"></i><span id="coins">0</span></span>
       <span class="pill"><i class="gem"></i><span id="gems">0</span></span>
     </div>
+    <button id="btnSet" aria-label="Settings">⚙️</button>
   </header>
   <main id="screen"></main>
   <nav id="tabs">
     <button data-tab="race" class="active"><span class="ti">🏁</span>Race</button>
-    <button data-tab="career"><span class="ti">👑</span>Career</button>
+    <button data-tab="events"><span class="ti">🏆</span>Events</button>
+    <button data-tab="crew"><span class="ti">⚔️</span>Crew</button>
     <button data-tab="garage"><span class="ti">🔧</span>Garage</button>
     <button data-tab="dealer"><span class="ti">🚗</span>Dealer</button>
-    <button data-tab="settings"><span class="ti">⚙️</span>Settings</button>
   </nav>
 </div>
 <div id="raceView" class="hidden">
