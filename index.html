@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#14081f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pink Slip Rivals">
+<title>Pink Slip Rivals</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="logo">PINK SLIP <b>RIVALS</b></div>
+    <div class="wallet">
+      <span class="pill"><i class="coin"></i><span id="coins">0</span></span>
+      <span class="pill"><i class="gem"></i><span id="gems">0</span></span>
+    </div>
+  </header>
+  <main id="screen"></main>
+  <nav id="tabs">
+    <button data-tab="race" class="active"><span class="ti">🏁</span>Race</button>
+    <button data-tab="career"><span class="ti">👑</span>Career</button>
+    <button data-tab="garage"><span class="ti">🔧</span>Garage</button>
+    <button data-tab="dealer"><span class="ti">🚗</span>Dealer</button>
+    <button data-tab="settings"><span class="ti">⚙️</span>Settings</button>
+  </nav>
+</div>
+<div id="raceView" class="hidden">
+  <canvas id="cv"></canvas>
+  <div id="satProbe" style="position:absolute;visibility:hidden;padding-top:env(safe-area-inset-top);height:0"></div>
+  <button id="btnQuit" aria-label="Quit race">✕</button>
+  <div id="raceBtns">
+    <button id="btnL" class="rbtn gas">GAS</button>
+    <button id="btnR" class="rbtn shift">SHIFT</button>
+  </div>
+</div>
+<div id="modal" class="hidden"><div class="mbox" id="mbox"></div></div>
+<script src="game.js"></script>
+</body>
+</html>
